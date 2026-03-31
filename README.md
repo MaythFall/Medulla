@@ -3,9 +3,9 @@
 A lightweight, concurrent C++ networking library focused on security and flexibility.
 
 ## Features
- - [cite_start]**Concurrency**: Process-based scaling via `fork()` [cite: 34-36].
- - [cite_start]**Security**: Uses memory-aligned `SecureBuffer` with RAII-based `secureWipe` [cite: 45-56, 58-59].
- - [cite_start]**Protocol**: Reliable 4-byte length-prefixed messaging in Network Byte Order (`ntohl`/`htonl`) [cite: 17-21, 26].
+ - **Concurrency**: Process-based scaling via `fork()`.
+ - **Security**: Uses memory-aligned `SecureBuffer` with RAII-based `secureWipe`.
+ - **Protocol**: Reliable 4-byte length-prefixed messaging in Network Byte Order (`ntohl`/`htonl`).
 
 ## Quick Start
 1. **Compile**: `g++ -std=c++17 src/main.cpp -I include -o server`
